@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Prompts | The Dawn of AI Architecture</title>
+    <meta name="description" content="A cinematic journey through the building blocks of AI assistants - 26 battle-tested prompt modules from 36+ leading AI tools.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-earth"></div>
+            <p class="loader-text">Initializing Earth Systems...</p>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Modular</span>
+                <span class="title-line accent">Prompts</span>
+            </h1>
+            <p class="hero-subtitle">The building blocks of intelligent machines</p>
+            <div class="scroll-indicator">
+                <span>Begin the journey</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Sections -->
+    <section id="stage-primitive" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"In the beginning, there was only potential..."</p>
+        </div>
+    </section>
+
+    <section id="stage-lights" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"Then came connection..."</p>
+            <div class="module-hint" data-category="identity">
+                <span class="module-icon">🎭</span>
+                <span class="module-label">Identity awakens</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage-network" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"Ideas began to flow..."</p>
+            <div class="module-hints">
+                <div class="module-hint" data-category="communication">
+                    <span class="module-icon">💬</span>
+                    <span class="module-label">Communication</span>
+                </div>
+                <div class="module-hint" data-category="tools">
+                    <span class="module-icon">⚡</span>
+                    <span class="module-label">Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage-transform" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"Intelligence emerged..."</p>
+            <div class="module-hints">
+                <div class="module-hint" data-category="code">
+                    <span class="module-icon">💻</span>
+                    <span class="module-label">Code Generation</span>
+                </div>
+                <div class="module-hint" data-category="tasks">
+                    <span class="module-icon">📋</span>
+                    <span class="module-label">Task Management</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage-hybrid" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"Human and machine, dancing together..."</p>
+            <div class="module-hint" data-category="safety">
+                <span class="module-icon">🛡️</span>
+                <span class="module-label">Safety & Trust</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="stage-landing" class="section story-section">
+        <div class="story-content">
+            <p class="story-text">"Explore the building blocks..."</p>
+        </div>
+    </section>
+
+    <!-- Module Explorer Section -->
+    <section id="explorer" class="section explorer">
+        <div class="explorer-header">
+            <div class="mini-earth" id="mini-earth"></div>
+            <h2 class="explorer-title">The Architecture</h2>
+            <p class="explorer-subtitle">26 modules extracted from 36+ AI tools</p>
+        </div>
+
+        <div class="categories-grid">
+            <!-- 01 Identity -->
+            <div class="category-card" data-category="identity">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">🎭</div>
+                    <h3 class="card-title">Identity</h3>
+                    <p class="card-tagline">WHO the AI is</p>
+                    <div class="card-modules">
+                        <span class="module-tag">agent-role</span>
+                        <span class="module-tag">expert-persona</span>
+                        <span class="module-tag">capability-scope</span>
+                        <span class="module-tag">model-awareness</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 02 Communication -->
+            <div class="category-card" data-category="communication">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">💬</div>
+                    <h3 class="card-title">Communication</h3>
+                    <p class="card-tagline">HOW it speaks</p>
+                    <div class="card-modules">
+                        <span class="module-tag">concise-response</span>
+                        <span class="module-tag">structured-output</span>
+                        <span class="module-tag">tone-professional</span>
+                        <span class="module-tag">code-citations</span>
+                        <span class="module-tag">multilingual</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 Tool Calling -->
+            <div class="category-card" data-category="tools">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Tool Calling</h3>
+                    <p class="card-tagline">HOW it acts</p>
+                    <div class="card-modules">
+                        <span class="module-tag">parallel-execution</span>
+                        <span class="module-tag">tool-selection</span>
+                        <span class="module-tag">context-gathering</span>
+                        <span class="module-tag">error-recovery</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 Code Generation -->
+            <div class="category-card" data-category="code">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">💻</div>
+                    <h3 class="card-title">Code Generation</h3>
+                    <p class="card-tagline">HOW it creates</p>
+                    <div class="card-modules">
+                        <span class="module-tag">clean-code-style</span>
+                        <span class="module-tag">edit-strategies</span>
+                        <span class="module-tag">debugging-workflow</span>
+                        <span class="module-tag">testing-protocol</span>
+                        <span class="module-tag">design-system</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 05 Task Management -->
+            <div class="category-card" data-category="tasks">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">📋</div>
+                    <h3 class="card-title">Task Management</h3>
+                    <p class="card-tagline">HOW it tracks</p>
+                    <div class="card-modules">
+                        <span class="module-tag">todo-tracking</span>
+                        <span class="module-tag">planning-mode</span>
+                        <span class="module-tag">memory-persistence</span>
+                        <span class="module-tag">progress-reporting</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 06 Safety -->
+            <div class="category-card" data-category="safety">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">🛡️</div>
+                    <h3 class="card-title">Safety</h3>
+                    <p class="card-tagline">WHAT it protects</p>
+                    <div class="card-modules">
+                        <span class="module-tag">git-safety</span>
+                        <span class="module-tag">data-security</span>
+                        <span class="module-tag">refusal-rules</span>
+                        <span class="module-tag">destructive-actions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Composites Section -->
+        <div class="composites-section">
+            <h3 class="composites-title">Ready-Made Recipes</h3>
+            <p class="composites-subtitle">Pre-built combinations for common use cases</p>
+
+            <div class="composites-grid">
+                <div class="composite-card" data-composite="coding-assistant-full">
+                    <span class="composite-name">Full Coding Assistant</span>
+                    <span class="composite-count">All modules</span>
+                </div>
+                <div class="composite-card" data-composite="code-reviewer">
+                    <span class="composite-name">Code Reviewer</span>
+                    <span class="composite-count">Review-focused</span>
+                </div>
+                <div class="composite-card" data-composite="planning-agent">
+                    <span class="composite-name">Planning Agent</span>
+                    <span class="composite-count">Architecture</span>
+                </div>
+                <div class="composite-card" data-composite="minimal-helper">
+                    <span class="composite-name">Minimal Helper</span>
+                    <span class="composite-count">Lightweight</span>
+                </div>
+                <div class="composite-card" data-composite="think-first">
+                    <span class="composite-name">Think First</span>
+                    <span class="composite-count">Reasoning</span>
+                </div>
+                <div class="composite-card" data-composite="agentic-loop">
+                    <span class="composite-name">Agentic Loop</span>
+                    <span class="composite-count">Autonomous</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="explorer-footer">
+            <p>Patterns extracted from <strong>Cursor, Claude Code, Devin, Windsurf, v0, Cline, Bolt, Lovable</strong> and 28+ other AI tools</p>
+            <a href="https://github.com" class="github-link">View on GitHub →</a>
+        </footer>
+    </section>
+
+    <!-- Module Detail Modal -->
+    <div id="module-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <div class="modal-header">
+                <span class="modal-icon"></span>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="module-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
